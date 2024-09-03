@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Onitama",
+        "number_of_players": 2,
+        "minimum_age": 8,
+        "type_main_theme": "Abstract Strategy",
+        "language": "Various",
+        "short_description": "A chess-like strategy game where players use shared movement cards to control their pieces on a 5x5 board.",
+        "image": "public/img/onitama.png"
+
+    },
+    {
+        "name": "Boop",
+        "number_of_players": 2,
+        "minimum_age": 10,
+        "type_main_theme": "Abstract, Cats",
+        "language": "English",
+        "short_description": "A light strategy game where players place cat tokens on a bed, aiming to line up three in a row to score.",
+        "image": "public/img/boop.png"
+
+    },
+    {
+        "name": "Merv",
+        "number_of_players": 4,
+        "minimum_age": 14,
+        "type_main_theme": "Strategy, Economic",
+        "language": "English",
+        "short_description": "A game set in the ancient city of Merv, focusing on resource management, trading, and defending against invasions.",
+        "image": "public/img/merv.png"
+
+    },
+    {
+        "name": "Ahoy",
+        "number_of_players": 4,
+        "minimum_age": 14,
+        "type_main_theme": "Strategy, Pirate-themed",
+        "language": "English",
+        "short_description": "A pirate-themed strategy game where players control ships, explore islands, and engage in naval battles.",
+        "image": "public/img/ahoy.png"
+    },
+    {
+        "name": "Cubitos",
+        "number_of_players": 2,
+        "minimum_age": 10,
+        "type_main_theme": "Dice Rolling, Racing",
+        "language": "English",
+        "short_description": "A racing game where players roll dice to move along a track, with various powers and abilities to gain an edge.",
+        "image": "public/img/cubitos.png"
+    },
+    {
+        "name": "The Crew",
+        "number_of_players": 2,
+        "minimum_age": 10,
+        "type_main_theme": "Cooperative, Space",
+        "language": "Various",
+        "short_description": "A cooperative trick-taking game set in space where players complete missions by working together.",
+        "image": "public/img/thecrew.png"
+    },
+    {
+        "name": "Celtic",
+        "number_of_players": 2,
+        "minimum_age": 8,
+        "type_main_theme": "Family, Strategy",
+        "language": "English",
+        "short_description": "A family-friendly strategy game with Celtic themes where players gather resources and complete quests.",
+        "image": "public/img/celtic.png"
+
+    },
+    {
+        "name": "Crystal Cave",
+        "number_of_players": 1,
+        "minimum_age": 10,
+        "type_main_theme": "Puzzle, Exploration",
+        "language": "English",
+        "short_description": "A puzzle game where players explore caves, collect crystals, and solve challenges to score points.",
+        "image": "public/img/vast.png"
+    },
+    {
+        "name": "Demeter",
+        "number_of_players": 4,
+        "minimum_age": 12,
+        "type_main_theme": "Roll-and-Write, Sci-Fi",
+        "language": "English",
+        "short_description": "A roll-and-write game set on a distant planet where players research dinosaurs and develop their stations.",
+        "image": "public/img/demeter.png"
+    },
+    {
+        "name": "Merlin",
+        "number_of_players": 2,
+        "minimum_age": 14,
+        "type_main_theme": "Strategy, Medieval",
+        "language": "English",
+        "short_description": "A medieval strategy game where players use dice to control knights and Merlin to complete various tasks.",
+        "image": "public/img/merlin.png"
+    },
+    {
+        "name": "Sewer Pirats",
+        "number_of_players": 2,
+        "minimum_age": 8,
+        "type_main_theme": "Strategy, Animal-themed",
+        "language": "English",
+        "short_description": "A game where players lead pirate animals in a race to gather the most valuable trash from the sewers.",
+        "image": "public/img/sewerpirates.png"
+    }
+]

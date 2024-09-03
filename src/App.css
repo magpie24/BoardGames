@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Search Bar */
+
+.search-bar {
+  padding: 10px;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1em;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #930004;
+}
+
+.fa-people-arrows{
+  color: #014968;
+  background-color: #78D7FF;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.fa-baby-carriage{
+  color: #A60081;
+  background-color: #FF9CE9;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.fa-dice{
+  color: #5208B1;
+  background-color: #B378FF;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.fa-earth-americas{
+  color: #01870F;
+  background-color: #5CD969;
+  padding: 4px;
+  border-radius: 4px;
+}
+
