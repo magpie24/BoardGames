@@ -6,7 +6,7 @@
         "type_main_theme": "Abstract Strategy",
         "language": "Various",
         "short_description": "A chess-like strategy game where players use shared movement cards to control their pieces on a 5x5 board.",
-        "image": "/img/onitama.png"
+        "image": "/public/img/onitama.png"
 
     },
     {
