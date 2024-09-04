@@ -6,7 +6,7 @@
         "type_main_theme": "Abstract Strategy",
         "language": "Various",
         "short_description": "A chess-like strategy game where players use shared movement cards to control their pieces on a 5x5 board.",
-        "image": "/img/onitama.png"
+        "image": "img/onitama.png"
 
     },
     {
@@ -16,7 +16,7 @@
         "type_main_theme": "Abstract, Cats",
         "language": "English",
         "short_description": "A light strategy game where players place cat tokens on a bed, aiming to line up three in a row to score.",
-        "image": "/img/boop.png"
+        "image": "img/boop.png"
 
     },
     {
