@@ -64,7 +64,7 @@ const App = () => {
 
     return (
         <div>
-            <img src="/img/logoo.png" width="80em" alt="BordSpilCafe Logo"></img>
+            <img src="img/logoo.png" width="80em" alt="BordSpilCafe Logo"></img>
             <h1>Explore the Fun!</h1>
             <input
                 type="text"

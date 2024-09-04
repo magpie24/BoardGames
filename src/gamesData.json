@@ -26,7 +26,7 @@
         "type_main_theme": "Strategy, Economic",
         "language": "English",
         "short_description": "A game set in the ancient city of Merv, focusing on resource management, trading, and defending against invasions.",
-        "image": "/img/merv.png"
+        "image": "img/merv.png"
 
     },
     {
@@ -36,7 +36,7 @@
         "type_main_theme": "Strategy, Pirate-themed",
         "language": "English",
         "short_description": "A pirate-themed strategy game where players control ships, explore islands, and engage in naval battles.",
-        "image": "/img/ahoy.png"
+        "image": "img/ahoy.png"
     },
     {
         "name": "Cubitos",
@@ -45,7 +45,7 @@
         "type_main_theme": "Dice Rolling, Racing",
         "language": "English",
         "short_description": "A racing game where players roll dice to move along a track, with various powers and abilities to gain an edge.",
-        "image": "/img/cubitos.png"
+        "image": "img/cubitos.png"
     },
     {
         "name": "The Crew",
@@ -54,7 +54,7 @@
         "type_main_theme": "Cooperative, Space",
         "language": "Various",
         "short_description": "A cooperative trick-taking game set in space where players complete missions by working together.",
-        "image": "/img/thecrew.png"
+        "image": "img/thecrew.png"
     },
     {
         "name": "Celtic",
@@ -63,7 +63,7 @@
         "type_main_theme": "Family, Strategy",
         "language": "English",
         "short_description": "A family-friendly strategy game with Celtic themes where players gather resources and complete quests.",
-        "image": "/img/celtic.png"
+        "image": "img/celtic.png"
 
     },
     {
@@ -73,7 +73,7 @@
         "type_main_theme": "Puzzle, Exploration",
         "language": "English",
         "short_description": "A puzzle game where players explore caves, collect crystals, and solve challenges to score points.",
-        "image": "/img/vast.png"
+        "image": "img/vast.png"
     },
     {
         "name": "Demeter",
@@ -82,7 +82,7 @@
         "type_main_theme": "Roll-and-Write, Sci-Fi",
         "language": "English",
         "short_description": "A roll-and-write game set on a distant planet where players research dinosaurs and develop their stations.",
-        "image": "/img/demeter.png"
+        "image": "img/demeter.png"
     },
     {
         "name": "Merlin",
@@ -91,7 +91,7 @@
         "type_main_theme": "Strategy, Medieval",
         "language": "English",
         "short_description": "A medieval strategy game where players use dice to control knights and Merlin to complete various tasks.",
-        "image": "/img/merlin.png"
+        "image": "img/merlin.png"
     },
     {
         "name": "Sewer Pirats",
@@ -100,6 +100,6 @@
         "type_main_theme": "Strategy, Animal-themed",
         "language": "English",
         "short_description": "A game where players lead pirate animals in a race to gather the most valuable trash from the sewers.",
-        "image": "/img/sewerpirates.png"
+        "image": "img/sewerpirates.png"
     }
 ]
