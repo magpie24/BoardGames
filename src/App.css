@@ -86,3 +86,100 @@
   border-radius: 4px;
 }
 
+/* adding games */
+
+.search-add-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.add-game-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content form button {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #930004;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content form button[type="button"] {
+  background-color: #eab2b4;
+  color: #930004;
+}
+
+/* Center the search bar and plus icon */
+.search-add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Style for the search bar */
+.search-bar {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-right: 10px; /* Space between the search bar and the plus icon */
+}
+
+/* Style for the plus icon */
+.add-game-icon {
+  background-color: #CC484C;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-game-icon:hover {
+  background-color: #b94042; /* Slightly darker on hover */
+}

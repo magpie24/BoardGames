@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faFilter, faPeopleArrows, faBabyCarriage, faEarthAmericas, faDice } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faFilter, faPeopleArrows, faBabyCarriage, faEarthAmericas, faDice, faPlus } from '@fortawesome/free-solid-svg-icons';
 import gamesData from './gamesData.json';
 import './App.css'; // Import the CSS file
 
@@ -8,6 +8,16 @@ const App = () => {
     const [games, setGames] = useState(gamesData);
     const [activeButton, setActiveButton] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
+    const [showModal, setShowModal] = useState(false);
+    const [newGame, setNewGame] = useState({
+        name: '',
+        number_of_players: '',
+        minimum_age: '',
+        type_main_theme: '',
+        language: '',
+        short_description: '',
+        image: ''
+    });
 
     const showAllGames = () => {
         setGames(gamesData);
@@ -39,10 +49,10 @@ const App = () => {
     };
 
     const filterByTypes = () => {
-      const filteredGames = gamesData.filter(game => game.type_main_theme.includes('Abstract'));
-      setGames(filteredGames);
-      setActiveButton('types');
-  };
+        const filteredGames = gamesData.filter(game => game.type_main_theme.includes('Abstract'));
+        setGames(filteredGames);
+        setActiveButton('types');
+    };
 
     const handleSearchChange = (event) => {
         const query = event.target.value.toLowerCase();
@@ -56,6 +66,25 @@ const App = () => {
         setGames(filteredGames);
     };
 
+    const handleInputChange = (e) => {
+        setNewGame({ ...newGame, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setGames([...games, newGame]);
+        setShowModal(false);
+        setNewGame({
+            name: '',
+            number_of_players: '',
+            minimum_age: '',
+            type_main_theme: '',
+            language: '',
+            short_description: '',
+            image: ''
+        });
+    };
+
     const getButtonStyle = (buttonName) => {
         return activeButton === buttonName
             ? { backgroundColor: '#EAB2B4', color: '#930004', borderColor: '#930004' }
@@ -66,13 +95,17 @@ const App = () => {
         <div>
             <img src="img/logoo.png" width="80em" alt="BordSpilCafe Logo"></img>
             <h1>Explore the Fun!</h1>
-            <input
-                type="text"
-                placeholder="Search games..."
-                value={searchQuery}
-                onChange={handleSearchChange}
-                className="search-bar"
-            />
+            <div className="search-add-container">
+    <input
+        type="text"
+        placeholder="Search games..."
+        value={searchQuery}
+        onChange={handleSearchChange}
+        className="search-bar"
+    />
+    <FontAwesomeIcon icon={faPlus} className="add-game-icon" onClick={() => setShowModal(true)} />
+</div>
+
             <div className="button-container">
                 <button
                     onClick={showAllGames}
@@ -124,6 +157,26 @@ const App = () => {
                     </div>
                 ))}
             </div>
+
+            {/* Add Game Modal */}
+            {showModal && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>Add New Game</h2>
+                        <form onSubmit={handleSubmit}>
+                            <input name="name" value={newGame.name} onChange={handleInputChange} placeholder="Name" required />
+                            <input name="number_of_players" value={newGame.number_of_players} onChange={handleInputChange} placeholder="Number of Players" required />
+                            <input name="minimum_age" value={newGame.minimum_age} onChange={handleInputChange} placeholder="Minimum Age" required />
+                            <input name="type_main_theme" value={newGame.type_main_theme} onChange={handleInputChange} placeholder="Type/Main Theme" required />
+                            <input name="language" value={newGame.language} onChange={handleInputChange} placeholder="Language" required />
+                            <textarea name="short_description" value={newGame.short_description} onChange={handleInputChange} placeholder="Short Description" required />
+                            <input name="image" value={newGame.image} onChange={handleInputChange} placeholder="Image Path" required />
+                            <button type="submit">Add Game</button>
+                            <button type="button" onClick={() => setShowModal(false)}>Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
