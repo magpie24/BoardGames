@@ -1,6 +1,6 @@
 {
   "name": "boardgames",
-  "homepage": "https://magpie24.github.io/BoardGames/",
+  "homepage": "https://magpie24.github.io/BoardGames/", 
   "private": true,
   "version": "0.0.0",
   "type": "module",
